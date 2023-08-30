@@ -1,10 +1,6 @@
 @use 'partials/index';
 @use 'partials/header';
 @use 'partials/footer';
-@use 'partials/about';
-@use 'partials/work';
-@use 'partials/careers';
-@use 'partials/contact';
 @use 'partials/buttons';
 @use 'partials/text';
 @use 'partials/variables';
@@ -12,8 +8,9 @@
 *{
     padding: 0;
     margin:0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0E0F25;
 }
-
 
 @font-face {
     font-family: "myFirstFont-bold";
@@ -25,7 +22,6 @@
     src:url("../fonts/ponter/ponter-alt.ttf");
 }
 
-
 @font-face {
     font-family: "mySecondFont";
     src:url("../fonts/poppins/poppins-regular.ttf");
@@ -34,6 +30,147 @@
 html{
     font-size: 62.5%;
 }
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bg--dark{
+    background-color: #0E0F25;
+}
+
+@mixin bg--light{
+    background-color: #FAF5F6;
+}
+
+@mixin color--dark{
+    background-color: #0E0F25;
+}
+
+@mixin color--light{
+    color: #FAF5F6;
+}
+
+.bg--dark{
+    @include bg--dark;
+}
+
+.bg--light{
+    @include bg--light;
+}
+
+.dark{
+    @include color--dark;
+}
+
+.light{
+    @include color--light;
+}
+
+main{
+    .index_hero_banner{
+
+        padding-top: 20rem;
+
+        .h1_index{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 10rem;
+            font-weight: 700;
+            line-height: 11rem;
+            text-align: center;
+            @include color--light;
+            padding-bottom: 5rem;
+        }
+
+        .h2_index{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 3.5rem;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            @include color--light;
+            padding-bottom: 5rem;
+        }
+
+
+        .container_buttons{
+            @include flex-row-center;
+            gap: 1.6rem;
+            
+
+            .btn-primary{
+                background-color: #FA0563;
+                width: 200px;
+                height: 60px;
+                border-radius: 7px;
+                border: none;
+                @include flex-column-center;
+                color: #FAF5F6;
+                font-size: 1.6rem;
+                line-height: 5rem;
+                font-weight: 500;
+                &:hover{
+                    background-color: #0E0F25;
+                    border: 1px solid #FA0563;
+                    color:#FA0563;
+                }
+            }
+
+            .btn-secondary{
+                @extend .btn-primary;
+                background-color: #FAF5F6;
+                color: #0E0F25 ;
+                font-size: 1.6rem;
+                line-height: 5rem;
+                font-weight: 500;
+                &:hover{
+                    background-color: #0E0F25;
+                    border: 1px solid #FAF5F6;
+                    color:#FAF5F6;
+                }
+            }
+            
+        }
+    }
+}
+
+    
+@media only screen and (min-width: 320px) and (max-width: 567px) {
+    .h1_index{
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 7rem;
+        text-align: left;
+    }
+
+    .h2_index{
+        text-align: left;
+    }
+    .container_buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+    
+    
+
+
+        
+    
+
+
 
 
 
