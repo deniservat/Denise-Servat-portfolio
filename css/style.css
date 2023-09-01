@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #0E0F25;
+} 
+
 .bg--dark {
   background-color: #2C3238;
 }
@@ -122,14 +129,6 @@ footer {
   width: 90%;
 }
 
-/*FOOTER responsive*/
-@media only screen and (max-width: 992px) {
-  .footer_column2,
-  .footer_column3 {
-    padding-left: 4rem;
-    padding-top: 4rem;
-  }
-}
 .bg--dark {
   background-color: #0E0F25;
 }
@@ -191,26 +190,7 @@ header .nav_bootstrap .btn-burger {
   margin-top: 0;
 }
 
-/*NAV responsive*/
-@media only screen and (max-width: 990px) {
-  .li--default, header .nav_bootstrap .navbar-nav .li--active {
-    padding-top: 2rem;
-  }
-  .li--active {
-    padding-top: rem;
-  }
-}
-@media screen and (max-width: 990px) {
-  .btn_logo {
-    padding-top: 0;
-  }
-  .nav_bootstrap {
-    height: 10rem;
-  }
-  .navbar-nav {
-    height: 90vh;
-  }
-}
+
 .index_main_container {
   overflow: hidden;
   background-color: #2C3238;
@@ -281,25 +261,8 @@ header .nav_bootstrap .btn-burger {
   padding-bottom: 4rem;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  background-color: #0E0F25;
-}
 
-@font-face {
-  font-family: "myFirstFont-bold";
-  src: url("../fonts/ponter/ponter-bold.ttf");
-}
-@font-face {
-  font-family: "myFirstFont-alt";
-  src: url("../fonts/ponter/ponter-alt.ttf");
-}
-@font-face {
-  font-family: "mySecondFont";
-  src: url("../fonts/poppins/poppins-regular.ttf");
-}
+
 html {
   font-size: 62.5%;
 }
@@ -382,15 +345,53 @@ main .index_hero_banner .container_buttons .btn-secondary:hover {
   color: #FAF5F6;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 567px) {
-  .h1_index {
-    font-size: 6rem;
+
+/*FOOTER responsive*/
+@media only screen and (max-width: 992px) {
+  .footer_column2,
+  .footer_column3 {
+    padding-left: 4rem;
+    padding-top: 4rem;
+  }
+}
+
+/*NAV responsive*/
+@media only screen and (max-width: 990px) {
+  .li--default, header .nav_bootstrap .navbar-nav .li--active {
+    padding-top: 2rem;
+  }
+  .li--active {
+    padding-top: rem;
+  }
+
+
+}
+
+@media screen and (max-width: 990px) {
+  .btn_logo {
+    padding-top: 0;
+  }
+  .nav_bootstrap {
+    height: 10rem;
+  }
+  .navbar-nav {
+    height: 50vh;
+    padding-left: 5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 567px){
+
+.h1_index {
+    font-size: 15rem;
     font-weight: 700;
-    line-height: 7rem;
+    line-height: 6rem;
     text-align: left;
   }
+
   .h2_index {
     text-align: left;
+    font-size: 4rem;
   }
   .container_buttons {
     display: flex;
