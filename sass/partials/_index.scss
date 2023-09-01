@@ -27,6 +27,7 @@
         padding-top: 20rem;
         padding-bottom: 20rem;
         background-image: url(../img/INDEX-bg-1920x1080.svg);
+        height: 100vh;
 
         .logo{
             margin-bottom: 2rem;
@@ -37,6 +38,7 @@
         padding-top: 5rem;
         padding-bottom: 10rem;
         @include bg-dark;
+        height: 100vh;
     }
     
     .index_main_section3{
