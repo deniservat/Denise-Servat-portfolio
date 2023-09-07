@@ -1,6 +1,41 @@
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.btn--primary{
+    background-color: #FA0563;
+    width: 200px;
+    height: 60px;
+    border-radius: 7px;
+    border: none;
+    @include flex-column-center;
+    color: #FAF5F6;
+    font-size: 1.6rem;
+    line-height: 5rem;
+    font-weight: 500;
+    &:hover{
+        background-color: #0E0F25;
+        border: 1px solid #FA0563;
+        color:#FA0563;
+    }
+}
 
-
+.btn--secondary{
+    @extend .btn--primary;
+    background-color: #FAF5F6;
+    color: #0E0F25 ;
+    font-size: 1.6rem;
+    line-height: 5rem;
+    font-weight: 500;
+    &:hover{
+        background-color: #0E0F25;
+        border: 1px solid #FAF5F6;
+        color:#FAF5F6;
+    }
+}
 
 
 
