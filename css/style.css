@@ -211,78 +211,6 @@ header .nav_bootstrap .btn-burger {
     height: 90vh;
   }
 }
-.index_main_container {
-  overflow: hidden;
-  background-color: #2C3238;
-}
-.index_main_container .index_main_section1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20rem;
-  padding-bottom: 20rem;
-  background-image: url(../img/INDEX-bg-1920x1080.svg);
-  height: 100vh;
-}
-.index_main_container .index_main_section1 .logo {
-  margin-bottom: 2rem;
-}
-.index_main_container .index_main_section2 {
-  padding-top: 5rem;
-  padding-bottom: 10rem;
-  background-color: #2C3238;
-  height: 100vh;
-}
-.index_main_container .index_main_section3 {
-  padding-top: 12rem;
-  background-color: #f0f3f6;
-}
-.index_main_container .index_main_section3 .index_row_90 {
-  padding: 0 5vw;
-  width: 90%;
-}
-.index_main_container .index_main_section4 {
-  width: 90%;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-  background-color: #2C3238;
-}
-.index_main_container .index_main_section5 {
-  padding: 12rem 0;
-  background-color: #f0f3f6;
-}
-
-.h3_index {
-  font-family: "myFirstFont-alt";
-  font-size: 4rem;
-  line-height: 5rem;
-  letter-spacing: 1rem;
-  padding-bottom: 2rem;
-  margin-top: 5rem;
-  text-align: center;
-  color: #F3F6F0;
-}
-
-.h6_index {
-  font-family: "mySecondFont";
-  font-size: 2rem;
-  line-height: 3.5rem;
-  color: #F3f6f0;
-  margin-bottom: 3.5rem;
-  text-align: center;
-}
-
-.h2_index {
-  font-family: "myFirstFont-bold";
-  font-size: 10rem;
-  line-height: 11rem;
-  letter-spacing: 1rem;
-  text-align: left;
-  color: #2C3238;
-  padding-bottom: 4rem;
-}
-
 .btn--primary, .btn--secondary {
   background-color: #FA0563;
   width: 200px;
@@ -357,31 +285,25 @@ html {
 }
 
 main .index_hero_banner {
+  width: 70%;
   padding-top: 20rem;
 }
-main .index_hero_banner .h1_index {
-  font-family: "Open Sans", sans-serif;
-  font-size: 8rem;
-  font-weight: 700;
-  line-height: 10rem;
-  text-align: center;
-  color: #FAF5F6;
-  padding-bottom: 5rem;
+main .index_hero_banner .col-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
-main .index_hero_banner .h2_index {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 3.5rem;
-  letter-spacing: 0.2rem;
-  text-align: center;
-  color: #FAF5F6;
-  padding-bottom: 5rem;
+main .index_hero_banner .col-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
 main .index_hero_banner .container_buttons {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: start;
   align-items: center;
   gap: 1.6rem;
 }
@@ -389,27 +311,7 @@ main .index_main_section2 {
   padding-top: 25rem;
   padding-bottom: 10rem;
   height: 100vh;
-  width: 70vw;
-}
-main .index_main_section2 .col-50 .p_index {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 3rem;
-  letter-spacing: 0.2rem;
-  text-align: left;
-  color: #FAF5F6;
-  padding-bottom: 5rem;
-}
-main .index_main_section2 .col-fw .h4_index {
-  font-family: "Open Sans", sans-serif;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 5rem;
-  letter-spacing: 0.2rem;
-  text-align: left;
-  color: #FAF5F6;
-  padding-bottom: 5rem;
+  width: 58%;
 }
 main .index_main_section3 .card {
   --bs-card-spacer-y: 1rem;
@@ -444,16 +346,20 @@ main .index_main_section3 .card {
   padding: 5rem;
 }
 main .index_main_section3 .index_card-img-top {
-  padding: 0 5rem;
+  padding: 0 3rem;
+}
+main .index_main_section3 .index_card-body {
+  height: 20vh;
 }
 main .index_main_section3 .index_card-title {
   font-family: "Open Sans", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 5rem;
+  line-height: 4rem;
   letter-spacing: 0.2rem;
   text-align: left;
   color: #FAF5F6;
+  padding-top: 1rem;
 }
 main .index_main_section3 .index_card-text {
   font-family: "Open Sans", sans-serif;
@@ -464,7 +370,6 @@ main .index_main_section3 .index_card-text {
   text-align: left;
   color: #FAF5F6;
   padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 main .index_main_section3 .index_card-tags {
   font-family: "Open Sans", sans-serif;
@@ -473,8 +378,109 @@ main .index_main_section3 .index_card-tags {
   line-height: 3rem;
   letter-spacing: 0.2rem;
   text-align: left;
-  color: aquamarine;
+  color: #7fffd4;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+main .index_main_section4 {
+  padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .index_main_section4 .row_title {
+  width: 73%;
+  padding-bottom: 2rem;
+}
+
+footer {
+  padding-top: 10rem;
+  background-color: #0E0F25;
+}
+
+.h1_index {
+  font-family: "Open Sans", sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 10rem;
+  text-align: left;
+  color: #FAF5F6;
+  padding-bottom: 5rem;
+}
+
+.h1_about {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17rem;
+  font-weight: 800;
+  line-height: 18rem;
+  text-align: left;
+  color: rgba(250, 245, 246, 0.1333333333);
+}
+
+.h2_index {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  color: #FAF5F6;
+  padding-bottom: 5rem;
+}
+
+.h4_index {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  color: #FAF5F6;
+  padding-bottom: 5rem;
+}
+
+.h5_index {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  color: #FAF5F6;
+  padding-bottom: 2rem;
+}
+
+.p_index {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  color: #FAF5F6;
+  padding-bottom: 5rem;
+}
+
+.p_footer_right {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: 0.2rem;
+  text-align: right;
+  color: #FAF5F6;
+  padding-bottom: 2rem;
+}
+
+.p_footer_left {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  color: #FAF5F6;
   padding-bottom: 2rem;
 }
 

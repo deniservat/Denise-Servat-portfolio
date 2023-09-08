@@ -10,6 +10,7 @@
     margin:0;
     font-family: 'Open Sans', sans-serif;
     background-color: #0E0F25;
+    
 }
 
 @font-face {
@@ -38,10 +39,31 @@ html{
     align-items: center;
 }
 
+@mixin flex-column-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+@mixin flex-column-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
 @mixin flex-row-center{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
 }
 
@@ -77,74 +99,31 @@ html{
     @include color--light;
 }
 
-  
-
 
 main{
     .index_hero_banner{
-
+        width: 70%;
         padding-top: 20rem;
 
-        .h1_index{
-            font-family: 'Open Sans', sans-serif;
-            font-size: 8rem;
-            font-weight: 700;
-            line-height: 10rem;
-            text-align: center;
-            @include color--light;
-            padding-bottom: 5rem;
+        .col-left{
+            @include flex-column-start;
         }
 
-        .h2_index{
-            font-family: 'Open Sans', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 500;
-            line-height: 3.5rem;
-            letter-spacing: 0.2rem;
-            text-align: center;
-            @include color--light;
-            padding-bottom: 5rem;
+        .col-left{
+            @include flex-column-end;
         }
-
 
         .container_buttons{
-            @include flex-column-center;
+            @include flex-row-start;
             gap: 1.6rem;          
         }
     }
-
 
     .index_main_section2{
         padding-top: 25rem;
         padding-bottom: 10rem;
         height: 100vh;
-        width: 70vw;
-
-        .col-50{
-            .p_index{
-                font-family: 'Open Sans', sans-serif;
-                font-size: 1.6rem;
-                font-weight: 400;
-                line-height: 3rem;
-                letter-spacing: 0.2rem;
-                text-align: left;
-                @include color--light;
-                padding-bottom: 5rem;
-            }
-        }
-
-        .col-fw{
-            .h4_index{
-                font-family: 'Open Sans', sans-serif;
-                font-size: 4rem;
-                font-weight: 700;
-                line-height: 5rem;
-                letter-spacing: 0.2rem;
-                text-align: left;
-                @include color--light;
-                padding-bottom: 5rem;
-            }
-        }  
+        width: 58%;
     }
 
     .index_main_section3{
@@ -184,18 +163,23 @@ main{
         
 
             .index_card-img-top{
-                padding: 0 5rem;
+                padding: 0 3rem;
                 
+            }
+
+            .index_card-body{
+                height: 20vh;
             }
 
             .index_card-title{
                 font-family: 'Open Sans', sans-serif;
-                font-size: 3.5rem;
+                font-size: 3rem;
                 font-weight: 700;
-                line-height: 5rem;
+                line-height: 4rem;
                 letter-spacing: 0.2rem;
                 text-align: left;
                 @include color--light;  
+                padding-top: 1rem;
             }
 
             .index_card-text{
@@ -206,9 +190,7 @@ main{
                 letter-spacing: 0.2rem;
                 text-align: left;
                 @include color--light;
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-                
+                padding-top: 2rem;    
             }
 
             .index_card-tags{
@@ -218,15 +200,112 @@ main{
                 line-height: 3rem;
                 letter-spacing: 0.2rem;
                 text-align: left;
-                color: aquamarine;
+                color: #7fffd4;
                 padding-top: 2rem;
                 padding-bottom: 2rem;
             }
         }
-    }
+
+        .index_main_section4{
+            padding-top: 12rem;
+            @include flex-column-center;
+
+            .row_title{
+                width: 73%; 
+                padding-bottom: 2rem;
+            }
+        }
     
+}
 
+footer{
+    padding-top: 10rem;
+    @include bg--dark;
+}
 
+.h1_index{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 10rem;
+    text-align: left;
+    @include color--light;
+    padding-bottom: 5rem;
+}
+
+.h1_about{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17rem;
+    font-weight: 800;
+    line-height: 18rem;
+    text-align: left;
+    color: #FAF5F622;
+}
+
+.h2_index{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    @include color--light;
+    padding-bottom: 5rem;
+}
+    .h4_index{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 5rem;
+        letter-spacing: 0.2rem;
+        text-align: left;
+        @include color--light;
+        padding-bottom: 5rem;
+    }
+
+    .h5_index{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 3rem;
+        letter-spacing: 0.2rem;
+        text-align: left;
+        @include color--light;
+        padding-bottom: 2rem;
+    }
+
+    .p_index{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        letter-spacing: 0.2rem;
+        text-align: left;
+        @include color--light;
+        padding-bottom: 5rem;
+    }
+
+    .p_footer_right{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        letter-spacing: 0.2rem;
+        text-align: right;
+        @include color--light;
+        padding-bottom: 2rem;
+    }
+
+    .p_footer_left{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        letter-spacing: 0.2rem;
+        text-align: left;
+        @include color--light;
+        padding-bottom: 2rem;
+    }
 
 
 @media only screen and (min-width: 320px) and (max-width: 567px) {
