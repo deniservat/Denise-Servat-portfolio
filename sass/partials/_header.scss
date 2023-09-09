@@ -62,9 +62,10 @@ header{
             .li--default{ 
                 font-size: 1.6rem;
                 line-height: 2rem;
-                font-weight: 500;
+                font-weight: 200;
                 padding-right: 10rem;
                 text-decoration: none;
+                letter-spacing: 0.2rem;
                 @include color--light;
                 padding-top: 8rem;
                 &:hover{ 

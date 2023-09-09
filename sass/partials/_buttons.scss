@@ -4,22 +4,33 @@
     justify-content: center;
     align-items: center;
 }
-
+/*
 .btn--primary{
-    background-color: #FA0563;
+    background-color: #CFF80A;
     width: 200px;
     height: 60px;
     border-radius: 7px;
     border: none;
     @include flex-column-center;
-    color: #FAF5F6;
-    font-size: 1.6rem;
-    line-height: 5rem;
-    font-weight: 500;
+    color: #0E0F25;
+    font-size: 1.3rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
     &:hover{
         background-color: #0E0F25;
-        border: 1px solid #FA0563;
-        color:#FA0563;
+        border: 1px solid #CFF80A;
+        color:#CFF80A;
+    }
+}
+
+.btn-primary{
+    background-color: #CFF80A;
+    width: 200px;
+    height: 60px;
+    &:hover{
+        background-color: #0E0F25;
+        border: 1px solid #CFF80A;
     }
 }
 
@@ -27,15 +38,46 @@
     @extend .btn--primary;
     background-color: #FAF5F6;
     color: #0E0F25 ;
-    font-size: 1.6rem;
-    line-height: 5rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
     &:hover{
         background-color: #0E0F25;
         border: 1px solid #FAF5F6;
         color:#FAF5F6;
     }
+}*/
+
+
+
+.btn_primary-default:hover{
+    display: none;
 }
 
+.btn_secondary-default:hover{
+    display: none;
+}
 
+.btn_primary-hover{
+    display: none;
+}
 
+.btn_secondary-hover{
+    display: none;
+}
+
+.btn_primary-hover:hover{
+    display: inline;
+}
+
+.btn_secondary-hover:hover{
+    display: inline;
+}
+
+.btn-1 .btn-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}

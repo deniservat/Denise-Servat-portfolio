@@ -172,9 +172,10 @@ header .nav_bootstrap .navbar-nav .nav-link {
 header .nav_bootstrap .navbar-nav .li--default, header .nav_bootstrap .navbar-nav .li--active {
   font-size: 1.6rem;
   line-height: 2rem;
-  font-weight: 500;
+  font-weight: 200;
   padding-right: 10rem;
   text-decoration: none;
+  letter-spacing: 0.2rem;
   color: #FAF5F6;
   padding-top: 8rem;
 }
@@ -211,59 +212,96 @@ header .nav_bootstrap .btn-burger {
     height: 90vh;
   }
 }
-.btn--primary, .btn--secondary {
-  background-color: #FA0563;
-  width: 200px;
-  height: 60px;
-  border-radius: 7px;
-  border: none;
+/*
+.btn--primary{
+    background-color: #CFF80A;
+    width: 200px;
+    height: 60px;
+    border-radius: 7px;
+    border: none;
+    @include flex-column-center;
+    color: #0E0F25;
+    font-size: 1.3rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    &:hover{
+        background-color: #0E0F25;
+        border: 1px solid #CFF80A;
+        color:#CFF80A;
+    }
+}
+
+.btn-primary{
+    background-color: #CFF80A;
+    width: 200px;
+    height: 60px;
+    &:hover{
+        background-color: #0E0F25;
+        border: 1px solid #CFF80A;
+    }
+}
+
+.btn--secondary{
+    @extend .btn--primary;
+    background-color: #FAF5F6;
+    color: #0E0F25 ;
+    font-size: 1.3rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    &:hover{
+        background-color: #0E0F25;
+        border: 1px solid #FAF5F6;
+        color:#FAF5F6;
+    }
+}*/
+.btn_primary-default:hover {
+  display: none;
+}
+
+.btn_secondary-default:hover {
+  display: none;
+}
+
+.btn_primary-hover {
+  display: none;
+}
+
+.btn_secondary-hover {
+  display: none;
+}
+
+.btn_primary-hover:hover {
+  display: inline;
+}
+
+.btn_secondary-hover:hover {
+  display: inline;
+}
+
+.btn-1 .btn-2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #FAF5F6;
-  font-size: 1.6rem;
-  line-height: 5rem;
-  font-weight: 500;
-}
-.btn--primary:hover, .btn--secondary:hover {
-  background-color: #0E0F25;
-  border: 1px solid #FA0563;
-  color: #FA0563;
-}
-
-.btn--secondary {
-  background-color: #FAF5F6;
-  color: #0E0F25;
-  font-size: 1.6rem;
-  line-height: 5rem;
-  font-weight: 500;
-}
-.btn--secondary:hover {
-  background-color: #0E0F25;
-  border: 1px solid #FAF5F6;
-  color: #FAF5F6;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  background-color: #0E0F25;
+  justify-content: start;
+  align-items: start;
 }
 
 @font-face {
-  font-family: "myFirstFont-bold";
-  src: url("../fonts/ponter/ponter-bold.ttf");
+  font-family: "myFirstFont-regular";
+  src: url("../fonts/MonumentExtended/MonumentExtended-Regular.otf");
 }
 @font-face {
   font-family: "myFirstFont-alt";
   src: url("../fonts/ponter/ponter-alt.ttf");
 }
-@font-face {
-  font-family: "mySecondFont";
-  src: url("../fonts/poppins/poppins-regular.ttf");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "myFirstFont-regular";
+  background-color: #0E0F25;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -362,7 +400,6 @@ main .index_main_section3 .index_card-title {
   padding-top: 1rem;
 }
 main .index_main_section3 .index_card-text {
-  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 3rem;
@@ -372,13 +409,12 @@ main .index_main_section3 .index_card-text {
   padding-top: 2rem;
 }
 main .index_main_section3 .index_card-tags {
-  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 3rem;
   letter-spacing: 0.2rem;
   text-align: left;
-  color: #7fffd4;
+  color: #CFF80A;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -400,85 +436,89 @@ footer {
 }
 
 .h1_index {
-  font-family: "Open Sans", sans-serif;
   font-size: 8rem;
   font-weight: 700;
   line-height: 10rem;
   text-align: left;
   color: #FAF5F6;
   padding-bottom: 5rem;
+  letter-spacing: 1rem;
 }
 
 .h1_about {
-  font-family: "Open Sans", sans-serif;
   font-size: 17rem;
   font-weight: 800;
   line-height: 18rem;
   text-align: left;
   color: rgba(250, 245, 246, 0.1333333333);
+  letter-spacing: 1rem;
 }
 
 .h2_index {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 3.5rem;
-  letter-spacing: 0.2rem;
+  line-height: 3rem;
+  letter-spacing: 0.5rem;
+  text-align: left;
+  color: #FAF5F6;
+  padding-bottom: 5rem;
+}
+
+.h3_index {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+  letter-spacing: 0.5rem;
   text-align: left;
   color: #FAF5F6;
   padding-bottom: 5rem;
 }
 
 .h4_index {
-  font-family: "Open Sans", sans-serif;
   font-size: 4rem;
   font-weight: 700;
   line-height: 5rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.5rem;
   text-align: left;
   color: #FAF5F6;
   padding-bottom: 5rem;
 }
 
 .h5_index {
-  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 3rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.5rem;
   text-align: left;
   color: #FAF5F6;
   padding-bottom: 2rem;
 }
 
 .p_index {
-  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.5rem;
   text-align: left;
   color: #FAF5F6;
   padding-bottom: 5rem;
 }
 
 .p_footer_right {
-  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.5rem;
   text-align: right;
   color: #FAF5F6;
   padding-bottom: 2rem;
 }
 
 .p_footer_left {
-  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.5rem;
   text-align: left;
   color: #FAF5F6;
   padding-bottom: 2rem;
