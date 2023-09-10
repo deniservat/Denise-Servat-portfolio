@@ -236,11 +236,11 @@
 	font-size: 1.2rem;
   text-align: left;  
   border: none;
-	padding: 10px 25px;
+	padding: 15px 25px;
   color: #0E0F25;
 	position: relative;
   @media only screen and (max-width: 576px) {
-    padding: 8px 25px;
+    padding: 10px 25px;
   } 
   &::before{
 		transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -264,7 +264,7 @@
 			width: 25%;
 			background: #CFF80A;
       @media only screen and (max-width: 576px) {
-        width: 40%;
+        width: 25%;
     } 
 		}
 		&:hover{

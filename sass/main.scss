@@ -298,8 +298,6 @@ footer{
     }
 
     .svg-1920{
-        @media only screen and (max-width: 1200px) {
-        } 
         @media only screen and (max-width: 991px) {
             display: none;
         } 
@@ -340,7 +338,7 @@ footer{
         font-size: 6rem;
         line-height: 8rem;
         letter-spacing: 0.5rem;
-        padding-bottom: 10rem;
+        padding-bottom: 5rem;
     } 
 }
 
@@ -382,6 +380,7 @@ footer{
     stroke-dasharray: 50 0;
     stroke-width: 5px;
     stroke-dashoffset: 0;
+    transition: 3s all ease;
 }
 
 .h1_work{
@@ -426,6 +425,7 @@ footer{
     stroke-dasharray: 50 0;
     stroke-width: 5px;
     stroke-dashoffset: 0;
+    transition: 3s all ease;
 }
 
 .h1_faq{
@@ -475,7 +475,7 @@ footer{
     stroke-dasharray: 50 0;
     stroke-width: 5px;
     stroke-dashoffset: 0;
-
+    transition: 3s all ease;
 }
 
 .h2_index{

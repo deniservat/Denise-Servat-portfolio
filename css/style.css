@@ -517,13 +517,13 @@ header .nav_bootstrap .btn-burger {
   font-size: 1.2rem;
   text-align: left;
   border: none;
-  padding: 10px 25px;
+  padding: 15px 25px;
   color: #0E0F25;
   position: relative;
 }
 @media only screen and (max-width: 576px) {
   .btn-terciary {
-    padding: 8px 25px;
+    padding: 10px 25px;
   }
 }
 .btn-terciary::before {
@@ -546,7 +546,7 @@ header .nav_bootstrap .btn-burger {
 }
 @media only screen and (max-width: 576px) {
   .btn-terciary.rect-terciary::before {
-    width: 40%;
+    width: 25%;
   }
 }
 .btn-terciary.rect-terciary:hover::before {
@@ -890,7 +890,7 @@ footer {
     font-size: 6rem;
     line-height: 8rem;
     letter-spacing: 0.5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -940,6 +940,7 @@ footer {
   stroke-dasharray: 50 0;
   stroke-width: 5px;
   stroke-dashoffset: 0;
+  transition: 3s all ease;
 }
 
 .h1_work {
@@ -992,6 +993,7 @@ footer {
   stroke-dasharray: 50 0;
   stroke-width: 5px;
   stroke-dashoffset: 0;
+  transition: 3s all ease;
 }
 
 .h1_faq {
@@ -1046,6 +1048,7 @@ footer {
   stroke-dasharray: 50 0;
   stroke-width: 5px;
   stroke-dashoffset: 0;
+  transition: 3s all ease;
 }
 
 .h2_index {
