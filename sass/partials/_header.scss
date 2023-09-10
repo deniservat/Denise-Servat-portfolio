@@ -36,6 +36,30 @@
 header{
     width: $full-width;
 
+    .navbar{
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0;
+        --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+        --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+        --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+        --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-brand-padding-y: 0;
+        --bs-navbar-brand-margin-end: 1rem;
+        --bs-navbar-brand-font-size: 1.25rem;
+        --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-nav-link-padding-x: 0.5rem;
+        --bs-navbar-toggler-padding-y: 0.25;
+        --bs-navbar-toggler-padding-x: 0.75rem;
+        --bs-navbar-toggler-font-size: 1.25rem;
+        --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+        --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+        --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+        --bs-navbar-toggler-focus-width: 0.25rem;
+        --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+       
+    }
+
     .nav_bootstrap{
         position: fixed;
         z-index: 1;
@@ -43,27 +67,98 @@ header{
         width: $full-width;
         height: 6rem;
 
+        @media only screen and (max-width: 990px) {
+            height: 10rem;
+        }
+       
         .btn_logo{
             margin-top: 0;
             padding-top: 5rem;
             margin-left: 2rem;
             position: relative;
+            @media only screen and (max-width: 990px) {
+                margin-top: 0;
+                padding-top: 0;
+                margin-left: 1rem;
+            } 
+            @media only screen and (max-width: 576px) {
+                margin-left: 1rem;
+            } 
+        }
+
+        .navbar{
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0.5rem;
+        --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+        --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+        --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+        --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-brand-padding-y: 0.3125rem;
+        --bs-navbar-brand-margin-end: 1rem;
+        --bs-navbar-brand-font-size: 1.25rem;
+        --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-nav-link-padding-x: 0.5rem;
+        --bs-navbar-toggler-padding-y: 0.25rem;
+        --bs-navbar-toggler-padding-x: 0.75rem;
+        --bs-navbar-toggler-font-size: 1.25rem;
+        --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+        --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+        --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+        --bs-navbar-toggler-focus-width: 0.25rem;
+        --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+        }
+
+        .navbar-brand{
+            padding-top: var(--bs-navbar-brand-padding-y);
+        padding-bottom: var(--bs-navbar-brand-padding-y);
+        margin-right: var(--bs-navbar-brand-margin-end);
+        font-size: var(--bs-navbar-brand-font-size);
+        color: var(--bs-navbar-brand-color);
+        text-decoration: none;
+        white-space: nowrap;
+        }
+
+        .navbar-toggler {
+            padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+            font-size: var(--bs-navbar-toggler-font-size);
+            line-height: 1;
+            color: var(--bs-navbar-color);
+            background-color: transparent;
+            border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+            border-radius: var(--bs-navbar-toggler-border-radius);
+            transition: var(--bs-navbar-toggler-transition);
         }
 
         .navbar-nav{
-            padding-top: 2rem;
+            padding-top: 0;
             width: $full-width;
             
+            @media only screen and (max-width: 990px) {
+                height: 90vh;
+                padding-top: 5rem;
+            }
+
+            .container-nav{
+                padding-top: 5rem;
+            }
 
             .nav-link{
                 list-style-type: none;  
             }
 
             .li--default{ 
-                font-size: 1.6rem;
+                font-family: "Main-regular";
+                font-size: 1.5rem;
                 line-height: 2rem;
                 font-weight: 200;
-                padding-right: 10rem;
+                padding-right: 5rem;
                 text-decoration: none;
                 letter-spacing: 0.2rem;
                 @include color--light;
@@ -71,46 +166,25 @@ header{
                 &:hover{ 
                     @include color--dark;
                     font-weight: 700;
-                    color:#FA0563;
+                    color:#FF4F2A;
+                }
+                @media only screen and (max-width: 990px) {
+                    padding-top: 5rem;
                 }
             }
             
             .li--active{ 
                 @extend .li--default;
-                @include color--dark;
                 font-weight: 700;
+                color:#FF4F2A;
+                @media only screen and (max-width: 990px) {
+                    padding-top: 5rem;
+                }
             }
         }
 
         .btn-burger{
             margin-top: 0;
         }
-    }
-}
-
-
-/*NAV responsive*/ 
-
-@media only screen and (max-width: 990px) {
-    .li--default{ 
-        padding-top: 2rem;
-    }
-    
-    .li--active{ 
-        padding-top: rem;
-    }
-}
-
-@media screen and (max-width: 990px) {
-    .btn_logo{
-        padding-top: 0;
-    }
-
-    .nav_bootstrap{
-        height: 10rem;
-    }
-
-    .navbar-nav{
-        height: 90vh;
     }
 }

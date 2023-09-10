@@ -51,33 +51,227 @@
 
 
 
-.btn_primary-default:hover{
-    display: none;
-}
 
-.btn_secondary-default:hover{
-    display: none;
-}
+/*
+.buttons {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 15%;
+  }
 
-.btn_primary-hover{
-    display: none;
-}
+  .wrapper {
+    margin-top: 25px;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px
+  }
 
-.btn_secondary-hover{
-    display: none;
-}
+  .svg{
+    position: absolute;
+  }
 
-.btn_primary-hover:hover{
-    display: inline;
-}
+  #btn {
+    stroke-width: 3px;
+    fill: transparent;
+    stroke: #FFF;
+    stroke-dasharray: 85 400;
+    stroke-dashoffset: -220;
+    transition: 1s all ease;
+  }
 
-.btn_secondary-hover:hover{
-    display: inline;
-}
+  .btn-text {
+    margin-top: -50px;
+  }
 
-.btn-1 .btn-2{
+  .btn-text a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1.3rem;
+  }
+
+  .a{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper:hover #btn {
+    stroke-dasharray: 50 0;
+    stroke-width: 5px;
+    stroke-dashoffset: 0;
+    stroke: #CFF80A;
+  }*/
+
+  /*
+	//rounded btn styles
+	&.rounded{
+		
+		& .text-green{
+      font-family: "Main-regular";
+			color:#CFF80A;
+			mix-blend-mode: difference;
+		}
+		
+		&::before{
+			
+			width: 25%;
+			background: #CFF80A;
+		}
+		&:hover{
+			&::before{
+			background: #CFF80A;
+				width: 100%;
+			}
+		}	
+	}
+}
+*/
+
+.container-btn {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	//border: 2px solid black;
+}
+
+.btn-primary{
+  font-family: "Main-regular";
+	font-size: 1.3rem;
+  text-align: left;  
+  border: none;
+	padding: 15px 25px;
+  color: #0E0F25;
+	position: relative;
+  @media only screen and (max-width: 576px) {
+    padding: 10px 25px;
+} 
+	&::before{
+		transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		content: '';
+		width: 40%;
+		height: 100%;
+		background: #CFF80A;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+  &.rect-primary{
+		
+		& .text-green{
+			color:#CFF80A;
+			mix-blend-mode: difference;
+		}
+		
+		&::before{
+			width: 25%;
+			background: #CFF80A;
+      @media only screen and (max-width: 576px) {
+        width: 40%;
+    } 
+		}
+		&:hover{
+			&::before{
+			background: #CFF80A;
+				width: 100%;
+			}
+		}	
+}
+}
+
+.btn-secondary{
+	font-family: "Main-regular";
+	font-size: 1.3rem;
+  text-align: left;  
+  border: none;
+	padding: 15px 25px;
+  color: #0E0F25;
+	position: relative;
+  @media only screen and (max-width: 576px) {
+    padding: 10px 25px;
+  } 
+  &::before{
+		transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		content: '';
+		width: 40%;
+		height: 100%;
+		background: #FAF5F6;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&.rect-secondary{
+		
+		& .text-white{
+			color:#FAF5F6;
+			mix-blend-mode: difference;
+		}
+		
+		&::before{
+			width: 25%;
+			background: #FAF5F6;
+      @media only screen and (max-width: 576px) {
+        width: 40%;
+    } 
+		}
+		&:hover{
+			&::before{
+        width: 100%;
+			  background: #FAF5F6;
+			}
+		}	
+	}
+}
+
+.btn-terciary{
+	font-family: "Main-regular";
+	font-size: 1.2rem;
+  text-align: left;  
+  border: none;
+	padding: 10px 25px;
+  color: #0E0F25;
+	position: relative;
+  @media only screen and (max-width: 576px) {
+    padding: 8px 25px;
+  } 
+  &::before{
+		transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		content: '';
+		width: 40%;
+		height: 100%;
+		background: #CFF80A;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&.rect-terciary{
+		
+		& .text-green{
+			color: #CFF80A;
+			mix-blend-mode: difference;
+		}
+		
+		&::before{
+			width: 25%;
+			background: #CFF80A;
+      @media only screen and (max-width: 576px) {
+        width: 40%;
+    } 
+		}
+		&:hover{
+			&::before{
+        width: 100%;
+			  background: #CFF80A;
+			}
+		}	
+	}
 }
