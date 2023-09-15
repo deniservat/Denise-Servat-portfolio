@@ -70,6 +70,13 @@ body html{
     align-items: center;
 }
 
+@mixin flex-row-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+}
+
 @mixin bg--dark{
     background-color: #0E0F25;
 }
@@ -478,6 +485,44 @@ footer{
     transition: 3s all ease;
 }
 
+
+.h1_project{
+    font-family: "Main-bold";
+    font-size: 8rem;
+    line-height: 12rem;
+    text-align: left;
+    color: #FAF5F6;
+    padding-bottom: 3rem;
+    letter-spacing: 0.6rem;
+    @media only screen and (min-width: 991px) and (max-width: 1200px) {
+        font-size: 8rem;
+        font-weight: 700;
+        line-height: 10rem;
+    } 
+    @media only screen and (max-width: 990px) {
+        text-align: center;
+    } 
+    @media only screen and (max-width: 576px) {
+        font-size: 6rem;
+        line-height: 8rem;
+        letter-spacing: 0.5rem;
+        padding-bottom: 5rem;
+    } 
+}
+
+.text-green{
+    color: #CFF80A;
+}
+
+.inline{
+    display: inline;
+    padding-right: 1rem;
+}
+
+.section-padding{
+    padding: 20rem 0;
+}
+
 .h2_index{
     font-family: "Main-regular";
     font-size: 2rem;
@@ -506,7 +551,6 @@ footer{
     @media only screen and (max-width: 576px) {
        display: none;
     } 
-
 }
 
     .h4_index{
@@ -658,15 +702,157 @@ footer{
         }
     }
 
+.container_space-between{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.newspapers_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newspapers_box_box{
+    border: 1px solid #FAF5F6;
+    margin: 3rem;
+    padding: 3rem;
+}
+
+
+
+.h2_project{
+    font-family: "Main-regular";
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    text-align: left;
+    @include color--light;
+    @media only screen and (max-width: 990px) {
+        text-align: center;
+    } 
+}
+
+.h3_project{
+    font-family: "Main-bold";
+    font-size: 5rem;
+    line-height: 6rem;
+    text-align: left;
+    color: #FAF5F6;
+    padding-bottom: 3rem;
+    letter-spacing: 0.6rem;
+    @media only screen and (min-width: 991px) and (max-width: 1200px) {
+        font-size: 8rem;
+        font-weight: 700;
+        line-height: 10rem;
+    } 
+    @media only screen and (max-width: 990px) {
+        text-align: center;
+    } 
+    @media only screen and (max-width: 576px) {
+        font-size: 6rem;
+        line-height: 8rem;
+        letter-spacing: 0.5rem;
+        padding-bottom: 5rem;
+    } 
+}
+
+.h5_project{
+    font-family: "Main-regular";
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: left;
+    color: #FAF5F6;
+    padding-bottom: 1rem;
+    letter-spacing: 0.3rem;
+    @media only screen and (min-width: 991px) and (max-width: 1200px) {
+        font-size: 8rem;
+        font-weight: 700;
+        line-height: 10rem;
+    } 
+    @media only screen and (max-width: 990px) {
+        text-align: center;
+    } 
+    @media only screen and (max-width: 576px) {
+        font-size: 6rem;
+        line-height: 8rem;
+        letter-spacing: 0.5rem;
+        padding-bottom: 5rem;
+    } 
+}
+
+.p_project{
+    font-family: "Alt-regular";
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    @include color--light;
+    padding-bottom: 3rem;
+    @media only screen and (max-width: 990px) {
+        text-align: center;
+    } 
+    @media only screen and (max-width: 576px) {
+       display: none;
+    } 
+}
+
+.li_project{
+    font-family: "Alt-regular";
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    @include color--light;
+    @media only screen and (max-width: 990px) {
+        text-align: center;
+    } 
+    @media only screen and (max-width: 576px) {
+       display: none;
+    } 
+}
+
+.container_icons_sections{
+    @include flex-column-start;
+    padding-right: 2rem;
+}
+
+.container_icons{
+   @include flex-row-end;
+}
+
+.icn_sections{
+    margin-right: 1rem;
+}
+
+.article_padding{
+    padding: 5rem 0;
+}
+
+.small-padding{
+    padding: 5rem 0;
+}
+
+.mid-padding{
+    padding: 10rem 0;
+}
+
+.big-padding{
+    padding: 20rem 0;
+}
     
-
-
-
     
-    
+.container_strip{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.container_justify-center{
+    @include flex-column-center;
+}
 
-        
     
 
 
