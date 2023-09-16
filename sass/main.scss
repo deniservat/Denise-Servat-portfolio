@@ -739,7 +739,6 @@ footer{
     line-height: 6rem;
     text-align: left;
     color: #FAF5F6;
-    padding-bottom: 3rem;
     letter-spacing: 0.6rem;
     @media only screen and (min-width: 991px) and (max-width: 1200px) {
         font-size: 8rem;
@@ -754,6 +753,16 @@ footer{
         line-height: 8rem;
         letter-spacing: 0.5rem;
         padding-bottom: 5rem;
+    } 
+}
+
+.h4_project{
+    font-family: "Main-regular";
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+    @include color--light;
+    @media only screen and (max-width: 990px) {
+        text-align: center;
     } 
 }
 
@@ -853,7 +862,19 @@ footer{
     @include flex-column-center;
 }
 
-    
+
+.container_row_align-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+}
+
+.rectangle{
+    border: 1px solid #FAF5F6;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
 
 
 

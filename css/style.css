@@ -1325,7 +1325,6 @@ footer {
   line-height: 6rem;
   text-align: left;
   color: #FAF5F6;
-  padding-bottom: 3rem;
   letter-spacing: 0.6rem;
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
@@ -1346,6 +1345,18 @@ footer {
     line-height: 8rem;
     letter-spacing: 0.5rem;
     padding-bottom: 5rem;
+  }
+}
+
+.h4_project {
+  font-family: "Main-regular";
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  color: #FAF5F6;
+}
+@media only screen and (max-width: 990px) {
+  .h4_project {
+    text-align: center;
   }
 }
 
@@ -1465,6 +1476,19 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container_row_align-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+}
+
+.rectangle {
+  border: 1px solid #FAF5F6;
+  padding: 3rem;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
