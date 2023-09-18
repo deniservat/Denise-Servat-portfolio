@@ -436,6 +436,7 @@ header .nav_bootstrap .btn-burger {
   padding: 15px 25px;
   color: #0E0F25;
   position: relative;
+  background-color: transparent;
 }
 @media only screen and (max-width: 576px) {
   .btn-primary {
@@ -478,6 +479,7 @@ header .nav_bootstrap .btn-burger {
   padding: 15px 25px;
   color: #0E0F25;
   position: relative;
+  background-color: transparent;
 }
 @media only screen and (max-width: 576px) {
   .btn-secondary {
@@ -520,6 +522,7 @@ header .nav_bootstrap .btn-burger {
   padding: 15px 25px;
   color: #0E0F25;
   position: relative;
+  background-color: transparent;
 }
 @media only screen and (max-width: 576px) {
   .btn-terciary {
@@ -569,7 +572,6 @@ header .nav_bootstrap .btn-burger {
 * {
   padding: 0;
   margin: 0;
-  background-color: #0E0F25;
 }
 
 html {
@@ -578,6 +580,7 @@ html {
 
 body html {
   overflow-x: hidden;
+  background-color: #0E0F25;
 }
 
 .bg--dark {
@@ -708,6 +711,10 @@ main .index_main_section3 .card-work {
   background-clip: border-box;
   border: 1px solid #FAF5F6;
   padding: 5rem;
+}
+main .index_main_section3 .card-work:hover {
+  background-color: rgba(250, 245, 246, 0.0666666667);
+  color: #0E0F25;
 }
 @media only screen and (max-width: 768px) {
   main .index_main_section3 .card-work {
@@ -1051,49 +1058,6 @@ footer {
   transition: 3s all ease;
 }
 
-.h1_project {
-  font-family: "Main-bold";
-  font-size: 8rem;
-  line-height: 12rem;
-  text-align: left;
-  color: #FAF5F6;
-  padding-bottom: 3rem;
-  letter-spacing: 0.6rem;
-}
-@media only screen and (min-width: 991px) and (max-width: 1200px) {
-  .h1_project {
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 10rem;
-  }
-}
-@media only screen and (max-width: 990px) {
-  .h1_project {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .h1_project {
-    font-size: 6rem;
-    line-height: 8rem;
-    letter-spacing: 0.5rem;
-    padding-bottom: 5rem;
-  }
-}
-
-.text-green {
-  color: #CFF80A;
-}
-
-.inline {
-  display: inline;
-  padding-right: 1rem;
-}
-
-.section-padding {
-  padding: 20rem 0;
-}
-
 .h2_index {
   font-family: "Main-regular";
   font-size: 2rem;
@@ -1288,6 +1252,169 @@ footer {
   }
 }
 
+.hero {
+  padding-top: 8rem;
+}
+@media only screen and (min-width: 577px) and (max-width: 1200px) {
+  .hero {
+    padding-top: 10rem;
+    width: 150%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero {
+    padding-top: 10rem;
+    width: 200%;
+    margin-left: -8rem;
+  }
+}
+
+.h1_project {
+  font-family: "Main-bold";
+  font-size: 8rem;
+  line-height: 12rem;
+  text-align: left;
+  color: #FAF5F6;
+  padding-bottom: 3rem;
+  letter-spacing: 0.6rem;
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .h1_project {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .h1_project {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .h1_project {
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: 0.4rem;
+  }
+}
+
+.h2_project {
+  font-family: "Main-regular";
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: #FAF5F6;
+}
+@media only screen and (max-width: 990px) {
+  .h2_project {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+}
+
+.h3_project {
+  font-family: "Main-bold";
+  font-size: 5rem;
+  line-height: 6rem;
+  color: #FAF5F6;
+  letter-spacing: 0.6rem;
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .h3_project {
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 10rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .h3_project {
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: 0.4rem;
+  }
+}
+
+.h4_project {
+  font-family: "Main-regular";
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  color: #FAF5F6;
+}
+.h5_project {
+  font-family: "Main-regular";
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #FAF5F6;
+  padding-bottom: 1rem;
+  letter-spacing: 0.3rem;
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .h5_project {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .h5_project {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.2rem;
+  }
+}
+.h5_btn {
+  font-family: "Main-regular";
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #FAF5F6;
+  padding-bottom: 1rem;
+  letter-spacing: 0.3rem;
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .h5_btn {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .h5_btn {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+}
+.p_project {
+  font-family: "Alt-regular";
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+  color: #FAF5F6;
+  padding-bottom: 3rem;
+}
+
+.li_project {
+  font-family: "Alt-regular";
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+  color: #FAF5F6;
+}
+
+.text-green {
+  color: #CFF80A;
+}
+
+.inline {
+  display: inline;
+  padding-right: 1rem;
+}
+
+.section-padding {
+  padding: 10rem 0;
+}
+@media only screen and (max-width: 1200px) {
+  .section-padding {
+    padding: 5rem 0;
+  }
+}
+
 .container_space-between {
   display: flex;
   flex-direction: row;
@@ -1305,127 +1432,16 @@ footer {
   margin: 3rem;
   padding: 3rem;
 }
-
-.h2_project {
-  font-family: "Main-regular";
-  font-size: 2rem;
-  letter-spacing: 0.5rem;
-  text-align: left;
-  color: #FAF5F6;
-}
-@media only screen and (max-width: 990px) {
-  .h2_project {
-    text-align: center;
-  }
-}
-
-.h3_project {
-  font-family: "Main-bold";
-  font-size: 5rem;
-  line-height: 6rem;
-  text-align: left;
-  color: #FAF5F6;
-  letter-spacing: 0.6rem;
-}
-@media only screen and (min-width: 991px) and (max-width: 1200px) {
-  .h3_project {
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 10rem;
-  }
-}
-@media only screen and (max-width: 990px) {
-  .h3_project {
-    text-align: center;
-  }
-}
 @media only screen and (max-width: 576px) {
-  .h3_project {
-    font-size: 6rem;
-    line-height: 8rem;
-    letter-spacing: 0.5rem;
-    padding-bottom: 5rem;
-  }
-}
-
-.h4_project {
-  font-family: "Main-regular";
-  font-size: 1.6rem;
-  letter-spacing: 0.3rem;
-  color: #FAF5F6;
-}
-@media only screen and (max-width: 990px) {
-  .h4_project {
-    text-align: center;
-  }
-}
-
-.h5_project {
-  font-family: "Main-regular";
-  font-size: 2rem;
-  line-height: 3rem;
-  text-align: left;
-  color: #FAF5F6;
-  padding-bottom: 1rem;
-  letter-spacing: 0.3rem;
-}
-@media only screen and (min-width: 991px) and (max-width: 1200px) {
-  .h5_project {
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 10rem;
-  }
-}
-@media only screen and (max-width: 990px) {
-  .h5_project {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .h5_project {
-    font-size: 6rem;
-    line-height: 8rem;
-    letter-spacing: 0.5rem;
-    padding-bottom: 5rem;
-  }
-}
-
-.p_project {
-  font-family: "Alt-regular";
-  font-size: 1.6rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
-  text-align: left;
-  color: #FAF5F6;
-  padding-bottom: 3rem;
-}
-@media only screen and (max-width: 990px) {
-  .p_project {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .p_project {
-    display: none;
-  }
-}
-
-.li_project {
-  font-family: "Alt-regular";
-  font-size: 1.6rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
-  text-align: left;
-  color: #FAF5F6;
-}
-@media only screen and (max-width: 990px) {
-  .li_project {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .li_project {
-    display: none;
+  .newspapers_box_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -1434,18 +1450,56 @@ footer {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding-right: 2rem;
+}
+@media only screen and (max-width: 576px) {
+  .container_icons_sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .container_icons {
   display: flex;
   flex-direction: row;
-  justify-content: end;
-  align-items: end;
+  justify-content: start;
+  align-items: center;
+}
+@media only screen and (max-width: 990px) {
+  .container_icons {
+    margin-bottom: 2rem;
+  }
 }
 
 .icn_sections {
   margin-right: 1rem;
+  width: 140px;
+  height: 140px;
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .icn_sections {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 990px) {
+  .icn_sections {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .icn_sections {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.row-space-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .article_padding {
@@ -1463,12 +1517,25 @@ footer {
 .big-padding {
   padding: 20rem 0;
 }
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .big-padding {
+    padding: 10rem 0;
+  }
+}
 
 .container_strip {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .container_strip {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 .container_justify-center {
@@ -1489,6 +1556,13 @@ footer {
   border: 1px solid #FAF5F6;
   padding: 3rem;
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .mobile_padding-botton {
+    width: 33%;
+    padding-bottom: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
