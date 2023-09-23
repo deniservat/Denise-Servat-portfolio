@@ -435,6 +435,49 @@ footer{
     transition: 3s all ease;
 }
 
+
+.h2_work{
+    font-family: "Main-bold";
+    font-size: 5rem;
+    color: #FAF5F622;
+    letter-spacing: 0.3rem;
+    stroke-dasharray: 85 400;
+    stroke-dashoffset: -220;
+    transition: 1s all ease;
+    @media only screen and (min-width: 991px) and (max-width: 1200px) {
+        font-size: 5rem;  
+    } 
+    @media only screen and (min-width: 577px) and (max-width: 990px) {
+        font-size: 3rem; 
+        text-align: center; 
+    } 
+    @media only screen and (max-width: 990px) {
+        color: transparent;
+        -webkit-text-stroke: #FAF5F6 1px;
+        stroke-dasharray: 50 0;
+        stroke-width: 5px;
+        stroke-dashoffset: 0;   
+    } 
+    @media only screen and (max-width: 576px) {
+        font-size: 3rem; 
+        text-align: right; 
+        padding: 0 3rem;
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        height: 45rem;
+        rotate: 180deg;
+    } 
+}
+
+.h2_work:hover{
+    color: transparent;
+    -webkit-text-stroke: #CFF80A 1px;
+    stroke-dasharray: 50 0;
+    stroke-width: 5px;
+    stroke-dashoffset: 0;
+    transition: 3s all ease;
+}
+
 .h1_faq{
     font-family: "Main-bold";
     font-size: 15rem;
